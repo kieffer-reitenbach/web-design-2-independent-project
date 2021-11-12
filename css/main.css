@@ -8,12 +8,6 @@ html {
   box-sizing: inherit;
 }
 
-h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #035881;
-}
-
 h2 {
   font-size: 1.5rem;
   font-weight: bold;
@@ -21,9 +15,9 @@ h2 {
 }
 
 h3 {
-  font-size: 1.3rem;
-  font-weight: bolder;
-  color: #e44043;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #035881;
 }
 
 h4 {
