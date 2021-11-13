@@ -18,7 +18,7 @@ html {
   position: absolute;
   top: -3em;
   color: #000;
-  padding: 0.25em 0.50em;
+  padding: .25em .5em;
   font-weight: bold;
   text-decoration: none;
 }
@@ -45,7 +45,7 @@ h4 {
   font-size: 1.1rem;
   font-weight: bolder;
   color: #555;
-  margin: 1rem 0 0 0;
+  margin: 1rem 0 0;
 }
 
 p {
@@ -85,6 +85,10 @@ header nav ul {
 li a {
   text-decoration: underline;
   color: #fff;
+}
+
+nav h2:hover, nav a:hover {
+  color: #74acc8;
 }
 
 section {
