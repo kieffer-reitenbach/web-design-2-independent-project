@@ -48,13 +48,13 @@ h4 {
   margin: 1rem 0 0;
 }
 
-p {
+main p {
   font-size: 1rem;
   margin: 0;
 }
 
-footer {
-  font-size: .6rem;
+.footer {
+  font-size: .8rem;
 }
 
 header {
@@ -87,7 +87,7 @@ li a {
   color: #fff;
 }
 
-nav h2:hover, nav a:hover {
+nav h2:hover, nav a:hover, .footer a:hover {
   color: #74acc8;
 }
 
@@ -102,4 +102,36 @@ section {
 article img {
   display: block;
   width: 100%;
+}
+
+footer {
+  position: relative;
+}
+
+footer img {
+  display: block;
+  width: 100%;
+}
+
+footer div {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+}
+
+footer p {
+  color: #fff;
+  margin: 0;
 }
