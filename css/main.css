@@ -28,22 +28,28 @@ html {
 }
 
 h2 {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: .7rem;
+  font-weight: bolder;
   color: #fff;
   margin: 0;
 }
 
 h3 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #035881;
   margin: 0;
 }
 
 h4 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #e44043;
+}
+
+h5 {
   font-size: 1.1rem;
-  font-weight: bolder;
+  font-weight: bold;
   color: #555;
   margin: 1rem 0 0;
 }
@@ -54,7 +60,7 @@ main p {
 }
 
 .footer {
-  font-size: .8rem;
+  font-size: .5rem;
 }
 
 header {
@@ -70,15 +76,17 @@ header img {
 header nav {
   margin: 0;
   position: absolute;
-  bottom: 2rem;
+  bottom: 10%;
   width: 100%;
 }
 
 header nav ul {
   list-style-type: none;
   display: flex;
+  flex-direction: column;
+  text-align: center;
   justify-content: space-around;
-  margin: 0;
+  margin: 0 1rem;
   padding: 0;
 }
 
@@ -88,20 +96,26 @@ li a {
 }
 
 nav h2:hover, nav a:hover, .footer a:hover {
-  color: #74acc8;
+  color: #f8b563;
 }
 
 section {
   margin-top: 2rem;
   margin-bottom: 2rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
   gap: 2rem;
+}
+
+.intro-image {
+  display: flex;
+  text-align: center;
 }
 
 article img {
   display: block;
-  width: 100%;
+  width: 200px;
+  margin: auto;
 }
 
 footer {
@@ -119,7 +133,11 @@ footer div {
   top: 50%;
   bottom: 50%;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 footer ul {
@@ -134,4 +152,47 @@ footer ul {
 footer p {
   color: #fff;
   margin: 0;
+}
+
+@media only screen and (min-width: 38em) {
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  header nav {
+    bottom: 30%;
+  }
+
+  header nav ul {
+    flex-direction: row;
+  }
+
+  .intro-image img {
+    width: 250px;
+  }
+
+  .footer {
+    font-size: .8rem;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  section {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  footer div {
+    flex-direction: row;
+  }
 }
