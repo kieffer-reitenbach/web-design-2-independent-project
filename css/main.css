@@ -1,7 +1,9 @@
 html {
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
-  margin: 2rem;
+  margin: auto;
+  max-width: 75em;
+
 }
 
 *, *::before, *::after {
@@ -64,7 +66,7 @@ main p {
 }
 
 header {
-  margin: 0;
+  margin: 1rem;
   position: relative;
 }
 
@@ -99,6 +101,21 @@ nav h2:hover, nav a:hover, .footer a:hover {
   color: #f8b563;
 }
 
+main {
+  margin: 1rem;
+}
+
+hr {
+  width: 90%;
+  height: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #035881;
+  border: 0 none;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
 section {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -112,14 +129,60 @@ section {
   text-align: center;
 }
 
-article img {
+.intro-image img {
   display: block;
-  width: 200px;
+  width: 100%;
   margin: auto;
+}
+
+figure {
+  position: relative;
+  overflow: hidden;
+}
+
+figcaption {
+  position: absolute;
+  bottom: -4em;
+  transition: all 200ms ease-in-out;
+  background-color: rgba(0, 0, 0, .3);
+  color: #fff;
+  width: 100%;
+  padding: 1em;
+}
+
+figure:hover figcaption {
+  bottom: 0px;
+}
+
+.sketches {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sketches img {
+  display: block;
+  width: 100%;
+}
+
+.swatches {
+  margin-top: auto;
+}
+
+.support {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.support img {
+  display: block;
+  width: 100%;
 }
 
 footer {
   position: relative;
+  margin: 2rem 1rem 0;
 }
 
 footer img {
@@ -174,6 +237,10 @@ footer p {
 
   .footer {
     font-size: .8rem;
+  }
+
+  .sketches, .support {
+    flex-direction: row;
   }
 
 }
