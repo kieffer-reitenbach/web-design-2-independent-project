@@ -3,7 +3,6 @@ html {
   font-family: "Open Sans", sans-serif;
   margin: auto;
   max-width: 75em;
-
 }
 
 *, *::before, *::after {
@@ -151,7 +150,7 @@ figcaption {
 }
 
 figure:hover figcaption {
-  bottom: 0px;
+  bottom: 0;
 }
 
 .sketches {
