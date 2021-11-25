@@ -28,29 +28,17 @@ html {
   top: 1em;
 }
 
-h2 {
-  font-size: .7rem;
-  font-weight: bolder;
-  color: #fff;
-  margin: 0;
-}
-
-h3 {
+h1 {
   font-size: 2rem;
-  font-weight: bold;
   color: #035881;
   margin: 0;
 }
 
-h4 {
-  font-size: 1.3rem;
-  font-weight: bold;
+h2 {
   color: #e44043;
 }
 
-h5 {
-  font-size: 1.1rem;
-  font-weight: bold;
+h3 {
   color: #555;
   margin: 1rem 0 0;
 }
@@ -61,7 +49,8 @@ main p {
 }
 
 .footer {
-  font-size: .5rem;
+  font-size: .7rem;
+  line-height: 1.2rem;
 }
 
 header {
@@ -74,10 +63,23 @@ header img {
   width: 100%;
 }
 
+.banner-logo {
+  position: absolute;
+  top: 20%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.banner-logo img {
+  display: block;
+  width: 40%;
+}
+
 header nav {
   margin: 0;
   position: absolute;
-  bottom: 10%;
+  bottom: 15%;
   width: 100%;
 }
 
@@ -91,12 +93,19 @@ header nav ul {
   padding: 0;
 }
 
+header nav li {
+  font-size: .9rem;
+  font-weight: bolder;
+  color: #fff;
+}
+
 li a {
+  margin: 0;
   text-decoration: underline;
   color: #fff;
 }
 
-nav h2:hover, nav a:hover, .footer a:hover {
+a:hover, nav h2:hover, nav a:hover, .footer a:hover {
   color: #f8b563;
 }
 
@@ -130,7 +139,7 @@ section {
 
 .intro-image img {
   display: block;
-  width: 100%;
+  width: 50%;
   margin: auto;
 }
 
@@ -142,9 +151,9 @@ figure {
 
 figcaption {
   position: absolute;
-  bottom: -4em;
+  bottom: -10em;
   transition: all 200ms ease-in-out;
-  background-color: rgba(0, 0, 0, .3);
+  background-color: rgba(0, 0, 0, .6);
   color: #fff;
   width: 100%;
   padding: 1em;
@@ -219,16 +228,16 @@ footer p {
 
 @media only screen and (min-width: 38em) {
 
-  h2 {
-    font-size: 1rem;
-  }
-
   header nav {
     bottom: 30%;
   }
 
   header nav ul {
     flex-direction: row;
+  }
+
+  header nav li {
+    font-size: 1rem;
   }
 
   .intro-image img {
@@ -247,12 +256,12 @@ footer p {
 
 @media only screen and (min-width: 62em) {
 
-  h2 {
-    font-size: 1.2rem;
+  .banner-logo {
+    top: 25%;
   }
 
-  h3 {
-    font-size: 2.5rem;
+  header nav li {
+    font-size: 1.2rem;
   }
 
   section {
