@@ -78,11 +78,13 @@ header img {
   width: 100%;
 }
 
-.banner-logo svg {
+.logo {
+  width: 30%;
+  height: auto;
   fill: #fff;
 }
 
-.banner-logo svg:hover {
+.logo:hover {
   fill: #f8b563;
 }
 
