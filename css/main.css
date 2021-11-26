@@ -61,21 +61,22 @@ main p {
 }
 
 header {
-  margin: 1rem;
-  position: relative;
-}
-
-header img {
-  display: block;
+  height: 400px;
   width: 100%;
+  margin: 1rem;
+  background-image: url("../images/banner.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .banner-logo {
-  position: absolute;
+  /* position: absolute;
   top: 20%;
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 100%; */
+  text-align: center;
 }
 
 .logo {
@@ -90,8 +91,7 @@ header img {
 
 header nav {
   margin: 0;
-  position: absolute;
-  bottom: 15%;
+  padding-bottom: 3em;
   width: 100%;
 }
 
