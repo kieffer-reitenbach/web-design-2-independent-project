@@ -91,7 +91,7 @@ header img {
 header nav {
   margin: 0;
   position: absolute;
-  bottom: 15%;
+  bottom: 20%;
   width: 100%;
 }
 
@@ -101,12 +101,13 @@ header nav ul {
   flex-direction: column;
   text-align: center;
   justify-content: space-around;
-  margin: 0 1rem;
+  margin: 0rem 1rem;
   padding: 0;
 }
 
 header nav li {
-  font-size: .9rem;
+  margin-bottom: .3rem;
+  font-size: .7rem;
   font-weight: bolder;
   color: #fff;
 }
@@ -117,7 +118,7 @@ li a {
   color: #fff;
 }
 
-a:hover, nav h2:hover, nav a:hover, .footer a:hover {
+a:hover, nav a:hover, .footer a:hover {
   color: #f8b563;
 }
 
