@@ -144,6 +144,25 @@ section {
   gap: 2rem;
 }
 
+.about-content {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.content-nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.content-nav a {
+  color: #035881;
+  text-decoration: none;
+}
+
+.content-nav a:hover {
+  color: #f8b563;
+}
+
 .intro-image {
   display: flex;
   text-align: center;
