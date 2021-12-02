@@ -194,6 +194,7 @@ figure:hover figcaption {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .sketches img {
@@ -209,6 +210,7 @@ figure:hover figcaption {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .support img {
@@ -217,26 +219,19 @@ figure:hover figcaption {
 }
 
 footer {
-  position: relative;
-  margin: 2rem 1rem 0;
-}
-
-footer img {
-  display: block;
   width: 100%;
+  background-image: url("../images/footer.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 footer div {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  bottom: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin: 0;
-  padding: 0;
+  padding: 2rem 0;
 }
 
 footer ul {
@@ -256,7 +251,7 @@ footer p {
 @media only screen and (min-width: 38em) {
 
   .banner-logo {
-    padding: 4rem 0 4rem;
+    padding: 4rem 0;
   }
 
   header nav {
@@ -277,10 +272,6 @@ footer p {
 
   .footer {
     font-size: .8rem;
-  }
-
-  .sketches, .support {
-    flex-direction: row;
   }
 
 }
@@ -305,8 +296,13 @@ footer p {
     grid-template-rows: 1fr;
   }
 
+  .sketches, .support {
+    flex-direction: row;
+  }
+
   footer div {
     flex-direction: row;
+    padding: 3.5rem 0;
   }
 
 }
